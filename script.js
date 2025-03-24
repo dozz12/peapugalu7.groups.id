@@ -39,3 +39,24 @@ document.getElementById("signup-form").addEventListener("submit", function (e) {
 
     // Sembunyikan form setelah sukses daftar
     document.getElementById("signup
+
+// Tambahkan efek ketika ikon media sosial diklik
+document.querySelectorAll(".icon").forEach(icon => {
+    icon.addEventListener("click", function() {
+        alert("Anda akan diarahkan ke " + this.innerText);
+    });
+});
+
+// Tambahkan notifikasi saat email atau WhatsApp diklik
+document.querySelector("a[href^='mailto']").addEventListener("click", function(event) {
+    event.preventDefault(); // Mencegah pembukaan otomatis
+    alert("Membuka aplikasi email...");
+    window.location.href = this.href;
+});
+
+document.querySelector("a[href^='https://wa.me']").addEventListener("click", function(event) {
+    event.preventDefault();
+    alert("Menghubungkan ke WhatsApp...");
+    window.location.href = this.href;
+});
+                            
