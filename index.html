@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Kedatuan Luwu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>Kedatuan Luwu</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#history">Sejarah</a></li>
+                <li><a href="#culture">Budaya</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#" onclick="showLogin()">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Selamat Datang di Kedatuan Luwu</h2>
+        <p>Mengungkap Sejarah & Budaya Kerajaan Tertua di Sulawesi Selatan</p>
+        <button onclick="alert('Jelajahi Sejarah!')">Jelajahi</button>
+    </section>
+
+    <!-- Sejarah Kedatuan Luwu -->
+    <section id="history">
+        <h2>Sejarah Kedatuan Luwu</h2>
+        <p>Kedatuan Luwu adalah kerajaan tertua di Sulawesi Selatan yang telah berdiri sejak abad ke-13...</p>
+    </section>
+
+    <!-- Budaya & Tradisi -->
+    <section id="culture">
+        <h2>Budaya & Tradisi</h2>
+        <p>Kedatuan Luwu memiliki budaya yang kaya, termasuk pakaian adat, seni tari, dan upacara adat...</p>
+    </section>
+
+    <!-- Galeri Sejarah -->
+    <section id="gallery">
+        <h2>Galeri Sejarah</h2>
+        <div class="gallery-container">
+            <img src="images/luwu1.jpg" alt="Peta Kedatuan Luwu">
+            <img src="images/luwu2.jpg" alt="Raja-raja Luwu">
+            <img src="images/luwu3.jpg" alt="Istana Kedatuan Luwu">
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact">
+        <h2>Hubungi Kami</h2>
+        <form>
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+            <textarea placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <!-- Login Page -->
+    <div id="login-page" class="auth-page">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Belum punya akun? <a href="#">Daftar</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
