@@ -88,3 +88,61 @@ nav ul li a {
     width: 100%;
     padding: 10px;
 }
+
+/* BAGIAN KONTAK */
+.contact {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.contact a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* IKON MEDIA SOSIAL */
+.social-icons {
+    margin-top: 20px;
+}
+
+.icon {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Warna ikon media sosial */
+.fb { background: #1877F2; }
+.ig { background: #E1306C; }
+.wa { background: #25D366; }
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
