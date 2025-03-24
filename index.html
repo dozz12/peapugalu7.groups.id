@@ -5,67 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sejarah Kedatuan Luwu</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-image: url('istana_luwu.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            border-radius: 10px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            margin: auto;
-        }
-        input, textarea, button {
-            margin-top: 10px;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-        }
-        button {
-            background-color: #ffcc00;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        footer {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
+
     <header>
         <h1>Kedatuan Luwu</h1>
         <nav>
@@ -77,10 +19,12 @@
             </ul>
         </nav>
     </header>
+
     <section id="sejarah">
         <h2>Sejarah Kedatuan Luwu</h2>
         <p>Kedatuan Luwu adalah salah satu kerajaan tertua di Sulawesi Selatan...</p>
     </section>
+
     <section id="penguasa">
         <h2>Daftar Penguasa</h2>
         <ul>
@@ -89,10 +33,12 @@
             <li>Raja 3</li>
         </ul>
     </section>
+
     <section id="galeri">
         <h2>Galeri</h2>
         <img src="luwu.jpg" alt="Gambar Kedatuan Luwu">
     </section>
+
     <section id="kontak">
         <h2>Kontak Kami</h2>
         <form id="contact-form">
@@ -108,18 +54,12 @@
             <button type="submit">Kirim</button>
         </form>
     </section>
+
     <footer>
         <p>&copy; 2025 Sejarah Kedatuan Luwu</p>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            console.log("Halaman Sejarah Kedatuan Luwu telah dimuat.");
-        });
-        
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Terima kasih! Pesan Anda telah dikirim.");
-        });
-    </script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
