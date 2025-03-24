@@ -4,62 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sejarah Kedatuan Luwu</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <h1>Kedatuan Luwu</h1>
         <nav>
             <ul>
-                <li><a href="#sejarah">Sejarah</a></li>
-                <li><a href="#penguasa">Penguasa</a></li>
-                <li><a href="#galeri">Galeri</a></li>
-                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#history">Sejarah</a></li>
+                <li><a href="#culture">Budaya</a></li>
+                <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="sejarah">
+    <section id="home">
+        <h2>Selamat Datang di Situs Sejarah Kedatuan Luwu</h2>
+        <p>Kedatuan Luwu merupakan salah satu kerajaan tertua di Sulawesi Selatan. Situs ini membahas sejarah dan budaya Luwu.</p>
+        <button onclick="showAlert()">Pelajari Lebih Lanjut</button>
+    </section>
+
+    <section id="history">
         <h2>Sejarah Kedatuan Luwu</h2>
-        <p>Kedatuan Luwu adalah salah satu kerajaan tertua di Sulawesi Selatan...</p>
+        <p>Kedatuan Luwu diperkirakan berdiri sejak abad ke-13 dan merupakan pusat peradaban Bugis tertua. Kerajaan ini terkenal dalam sejarah sebagai pusat perdagangan dan penyebaran Islam di Sulawesi.</p>
     </section>
 
-    <section id="penguasa">
-        <h2>Daftar Penguasa</h2>
-        <ul>
-            <li>Raja 1</li>
-            <li>Raja 2</li>
-            <li>Raja 3</li>
-        </ul>
+    <section id="culture">
+        <h2>Budaya Kedatuan Luwu</h2>
+        <p>Luwu memiliki tradisi dan budaya yang kaya, seperti upacara adat Maccera Tasi dan Pajoge yang menjadi bagian dari warisan leluhur.</p>
     </section>
 
-    <section id="galeri">
-        <h2>Galeri</h2>
-        <img src="https://asset.kompas.com/crops/UmDCqaueQxwq9LNSEB9q7oQkz20=/0x0:4240x2827/750x500/data/photo/2021/03/17/6051e1d7ca733.jpg" alt="Gambar Kedatuan Luwu">
-    </section>
-
-    <section id="kontak">
-        <h2>Kontak Kami</h2>
-        <form id="contact-form">
-            <label for="nama">Nama:</label>
-            <input type="text" id="nama" name="nama" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="pesan">Pesan:</label>
-            <textarea id="pesan" name="pesan" rows="4" required></textarea>
-            
+    <section id="contact">
+        <h2>Hubungi Kami</h2>
+        <form id="contactForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" required></textarea>
             <button type="submit">Kirim</button>
         </form>
+        <p id="response"></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Sejarah Kedatuan Luwu</p>
+        <p>&copy; 2025 Sejarah Kedatuan Luwu. Semua Hak Dilindungi.</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
