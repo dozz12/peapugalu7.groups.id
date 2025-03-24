@@ -1,25 +1,36 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Halaman Sejarah Kedatuan Luwu telah dimuat.");
+// Fungsi untuk menampilkan alert saat tombol diklik
+function showAlert() {
+    alert("Jelajahi sejarah Kedatuan Luwu yang kaya dan menarik!");
+}
 
-    // Form kontak
-    const form = document.getElementById("contact-form");
+// Menangani pengiriman form kontak
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    let name = document.getElementById("name").value;
+    let message = document.getElementById("message").value;
+    
+    if (name && message) {
+        document.getElementById("response").innerText = `Terima kasih, ${name}! Pesan Anda telah dikirim.`;
+    } else {
+        document.getElementById("response").innerText = "Harap isi semua kolom.";
+    }
+});
+// Fungsi untuk menampilkan alert saat tombol diklik
+function showAlert() {
+    alert("Jelajahi sejarah Kedatuan Luwu yang kaya dan menarik!");
+}
 
-    if (form) {
-        form.addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            // Ambil nilai input
-            const nama = document.getElementById("nama").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const pesan = document.getElementById("pesan").value.trim();
-
-            if (nama === "" || email === "" || pesan === "") {
-                alert("Harap isi semua bidang formulir sebelum mengirim.");
-                return;
-            }
-
-            alert(`Terima kasih, ${nama}! Pesan Anda telah dikirim.`);
-            form.reset();
-        });
+// Menangani pengiriman form kontak
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    let name = document.getElementById("name").value;
+    let message = document.getElementById("message").value;
+    
+    if (name && message) {
+        document.getElementById("response").innerText = `Terima kasih, ${name}! Pesan Anda telah dikirim.`;
+    } else {
+        document.getElementById("response").innerText = "Harap isi semua kolom.";
     }
 });
