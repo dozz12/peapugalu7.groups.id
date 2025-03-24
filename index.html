@@ -11,6 +11,57 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+        }
+        input, textarea, button {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background-color: #ffcc00;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -22,6 +73,7 @@
                 <li><a href="#sejarah">Sejarah</a></li>
                 <li><a href="#penguasa">Penguasa</a></li>
                 <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Kontak</a></li>
             </ul>
         </nav>
     </header>
@@ -39,7 +91,22 @@
     </section>
     <section id="galeri">
         <h2>Galeri</h2>
-        <img src="https://asset.kompas.com/crops/Os7b0dsIwpUgZEPwkD_tFfdKTnQ=/0x0:4240x2827/750x500/data/photo/2021/03/17/6051e1c3a5f62.jpg" alt="Gambar Kedatuan Luwu">
+        <img src="luwu.jpg" alt="Gambar Kedatuan Luwu">
+    </section>
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <form id="contact-form">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            
+            <button type="submit">Kirim</button>
+        </form>
     </section>
     <footer>
         <p>&copy; 2025 Sejarah Kedatuan Luwu</p>
@@ -47,6 +114,11 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             console.log("Halaman Sejarah Kedatuan Luwu telah dimuat.");
+        });
+        
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Terima kasih! Pesan Anda telah dikirim.");
         });
     </script>
 </body>
